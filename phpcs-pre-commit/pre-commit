@@ -32,7 +32,7 @@ else
     against=4b825dc642cb6eb9a060e54bf8d69288fbee4904
 fi
 
-# this is the magic: 
+# this is the magic:
 # retrieve all files in staging area that are added, modified or renamed
 # but no deletions etc
 FILES=$(git diff-index --name-only --cached --diff-filter=ACMR $against -- )
